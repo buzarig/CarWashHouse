@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script defer src="../scripts/view.js"></script>
+    <script defer src="../scripts/burger.js"></script>
+    <script defer src="../scripts/header.js"></script>
+    <script defer src="../scripts/popup.js"></script>
+    <script defer src="../scripts/map.js"></script>
+    <script defer src="../scripts/app.js"></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/polishing.css" />
+    <title>Полірування</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header__panel">
+            <a href="../index.html" class="header__logo-wrapper">
+              <img
+                class="header__logo"
+                src="../assets/images/header-logo.png"
+                alt=""
+              />
+            </a>
+            <nav class="header__nav">
+              <a class="header__nav-item" href="../pages/nanoceramics.html"
+                >NANOКЕРАМІКА</a
+              >
+              <a class="header__nav-item" href="../pages/polishing.html"
+                >ПОЛІРУВАННЯ</a
+              >
+              <a class="header__nav-item" href="../pages/cleaning.html"
+                >ХІМЧИСТКА</a
+              >
+              <a class="header__nav-item" href="#"
+                >МИЙКА
+                <img
+                  class="menu-triangle"
+                  src="../assets/icons/triangle.png"
+                  alt=""
+                />
+              </a>
+              <div class="menu">
+                <a href="../pages/car-detailing.html" class="menu-item"
+                  >Автомийка</a
+                >
+                <a href="../pages/engine-detailing.html" class="menu-item"
+                  >Детейлінг двигуна</a
+                >
+                <a href="../pages/wax.html" class="menu-item">Твердий віск</a>
+                <a href="../pages/anti-rain.html" class="menu-item">Антидощ</a>
+              </div>
+              <a
+                class="header__nav-item"
+                href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+                >ВІДГУКИ</a
+              >
+              <a class="header__nav-item" href="../pages/price.html">ЦІНИ</a>
+            </nav>
+
+            <div class="header__number-wrapper">
+              <div class="header__number modal">+38 (096) 390 60 49</div>
+              <img
+                class="header__phone modal"
+                src="../assets/icons/phone.png"
+                alt=""
+              />
+              <a href="#" class="burger-menu_button">
+                <spun class="burger-menu_lines"></spun>
+              </a>
+              <div class="burger-menu"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__promo">
+          <span class="header__title">Відновлення та полірування авто</span>
+          <span class="header__description"
+            >Повернемо вашій машині привабливий вигляд та неймовірний блиск
+            поверхні</span
+          >
+          <div class="header__button-wrapper">
+            <div class="header__button modal">Запис і консультація</div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="burger__main">
+          <div class="burger__body">
+            <div class="burger__content">
+              <a href="../index.html" class="burger__link-item">Головна</a>
+              <a href="../pages/nanoceramics.html" class="burger__link-item"
+                >Nanoкераміка</a
+              >
+              <a href="../pages/polishing.html" class="burger__link-item"
+                >Полірування</a
+              >
+              <a href="../pages/cleaning.html" class="burger__link-item"
+                >Хімчистка</a
+              >
+              <a href="../pages/car-detailing.html" class="burger__link-item"
+                >Автомийка</a
+              >
+              <a href="../pages/engine-detailing.html" class="burger__link-item"
+                >Детейлінг двигуна парою</a
+              >
+              <a href="../pages/wax.html" class="burger__link-item"
+                >Твердий віск</a
+              >
+              <a href="../pages/anti-rain.html" class="burger__link-item"
+                >Антидощ</a
+              >
+              <a
+                href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+                class="burger__link-item"
+                >Відгуки</a
+              >
+              <a href="../pages/price.html" class="burger__link-item">Ціни</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup">
+          <div class="popup__body">
+            <div class="popup__content">
+              <img
+                src="../assets/icons/close.png"
+                alt=""
+                class="popup__close"
+              />
+              <div class="tap__on">Натисни і дзвони</div>
+              <a href="tel:+38 (096) 390 60 49" class="popup__phone"
+                >+38 (096) 390 60 49</a
+              >
+              <div class="popup__or">АБО</div>
+              <div class="popup__form">
+                Введіть своє ім’я і номер телефону і ми з вами зв’яжемось
+                найближчим часом
+              </div>
+              <input type="text" placeholder="Ім’я" class="name__input" />
+              <input type="tel" placeholder="Телефон" class="number__input" />
+              <button class="callback__button">Передзвоніть мені</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="about">
+          <div class="about-wrapper">
+            <div class="about__description">
+              <p>
+                Зараз у Києві існує багато майстерень, де можна замовити послугу
+                полірування кузова автомобіля. Але при цьому багато де порушують
+                технологію, або мають недостатній досвід для цієї роботи.
+              </p>
+              <p>
+                В нашій майстерні дуже часто бувають випадки, коли нашим
+                співробітникам доводилося переробляти поліровку кузова авто
+                після таких «майстрів». Не переплачуйте за неякісну роботу,
+                звертайтеся зразу до спеціалістів нашої детейлінг студії
+                “BathHouseCar”!
+              </p>
+              <p>
+                Поліровка кузова автомобіля – це необхідність, що не тільки
+                поверне блиск фарби, але і захистить кузов автомобіля від
+                незначних подряпин. Багато хто з власників авто вважають, що
+                полірування – це видалення верхнього слою лаку. Це дуже погано,
+                тому більшість водіїв не хочуть замовляти послугу полірування
+                кузова. Проте, полірування кузова авто в нашій майстерні
+                виглядає зовсім по іншому. Ми не видаляємо верхній шар лаку. В
+                роботі ми використовуємо новітні технології, що здатні виконати
+                поліровку кузова без додавання абразивних матеріалів.’ Так,
+                бувають випадки, коли без абразивних матеріалів відполірувати
+                дефект або пошкодження неможливо, проте це велика рідкість.
+              </p>
+              <p>
+                <span>
+                  Якісна підготовка, скрупульозність виконання всіх процесів,
+                  самовдосконалення
+                </span>
+                – це все детейлінг студія “BathHouseCar”! Зовсім не важливо яку
+                поліроль використовувати, та в скільки шарів її наносити.
+                Неможливо отримати гарні результати, якщо ретельно не
+                підготовити кузов автомобіля, та не виконати технологічно
+                правильну послідовність дій, отже:
+              </p>
+            </div>
+            <span class="about__list-title"> Чому нам довіряють? </span>
+            <ul class="about__list">
+              <li class="about__list-item">
+                Ми використовуємо технологію, що дозволяє зберегти верхній шар
+                лаку.
+              </li>
+              <li class="about__list-item">
+                Для поліровки кузова використовуються виключно сучасні матеріали
+                та обладнання.
+              </li>
+              <li class="about__list-item">
+                Практикуємо індивідуальний підхід до кожного автомобілю.
+              </li>
+              <li class="about__list-item">
+                Гарантуємо високу якість виконання робіт.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="polishing">
+          <span class="polishing__title"> Полірування пластикових фар </span>
+          <div class="polishing__plate">
+            <div class="polishing__plate-item">
+              <div class="item__text">
+                <p>
+                  Зараз, більшість виробників автомобілів почали виготовляти
+                  фари з пластмаси. Це значно полегшує та здешевлює процес
+                  виготовлення оптики для автомобіля. Проте тут є і певні
+                  недоліки.
+                </p>
+                <p>
+                  На відміну від скла, пластмасова поверхні більш м’яка, ті під
+                  час експлуатації автомобіля, на ній з’являється багато
+                  подряпин. А щоб цьому запобігти, виробники покривають фари
+                  шаром спеціального лаку, який під час тривалого використання
+                  фар, починає темніти, що приводить до погіршення освітлення
+                  фар.
+                </p>
+                <p>
+                  На жаль, під час частої експлуатації автомобіля також страждає
+                  і його оптика. На поверхні фар з’являються подряпини та
+                  накопичується бруд, що в цілому призводить до помутніння
+                  світла фар. Чим більше помутніння фар, тим більше вірогідність
+                  того, що під час поїздки в темну пору доби ви можете втрапити
+                  в ДТП.
+                </p>
+                <p>
+                  А для того, щоб процес водіння в темну пору доби був для вас
+                  комфортним та безпечним, необхідно скористатися послугою
+                  полірування фар вашого автомобіля.
+                </p>
+              </div>
+              <img
+                class="item__poster"
+                src="../assets/images/polishing-image1.png"
+                alt=""
+              />
+            </div>
+            <div class="polishing__plate-item">
+              <img
+                class="item__poster second"
+                src="../assets/images/polishing-image2.png"
+                alt=""
+              />
+              <div class="item__text">
+                <p>
+                  Якісне полірування фар в нашій майстерні поверне оптиці вашого
+                  автомобіля ефективність. Тепер поїздка в темну пору буде для
+                  вас максимально безпечною та комфортною, а сам вигляд фар
+                  додасть вашому автомобілю вигляд нової.
+                </p>
+                <p>
+                  Спеціалісти майстерні “BathHouseCar” дуже добре знають всі
+                  недоліки пластикових фар, тому дуже добре розуміються на тому,
+                  як ці недоліки прибрати. Ми гарантовано зробимо свою роботу
+                  таким чином, що її ефективність буде помітно навіть вдень.
+                </p>
+                <p>
+                  В нашій майстерні, весь процес полірування пластикових фар
+                  розбивається на декілька етапів, де ми використовуємо
+                  різноманітні абразивні пасти різної зернистості, тож:
+                </p>
+                <ul class="item__list">
+                  <span class="item__list-title">Полірування фар надає:</span>
+                  <li class="item__list-item">Нижчий ризик ДТП</li>
+                  <li class="item__list-item">
+                    Вищий комфорт та безпеку вождіння
+                  </li>
+                  <li class="item__list-item">Вигляд фар як у нового авто</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-polishing">
+          <div class="about-polishing__texts">
+            <span class="about-polishing__title">
+              Полірування кузова автомобіля
+            </span>
+            <p>
+              Заводське лакофарбове покриття автомобіля завжди є якісним,
+              надійним та має відмінний зовнішній вигляд. Однак, через деякий
+              час після експлуатації, в зв’язку із зовнішніми факторами, він
+              починає псуватися: кузов втрачає свій блиск та колір, з’являються
+              подряпини. Аби вберенти своє авто потрібно вчасно робити
+              полірування кузова.
+            </p>
+            <p>
+              Слід зазначити, що лакофарбове покриття новго автомобіля є
+              унікальним, тому жодне фарбування в майбутньому не забезпечить
+              такого результату. Тому важливо захистити поверхню від абразивного
+              впливу різних частинок в ході експлуатації за допомогою захисної
+              поліровки.
+            </p>
+            <span class="about-polishing__list-title">
+              Переваги полірування:
+            </span>
+            <ul class="about-polishing__list">
+              <li class="about-polishing__list-item">
+                Захисна поліровка робить кузов сяючим, яскравим;
+              </li>
+              <li class="about-polishing__list-item">
+                Надійний захист покриття. По всій поверхні кузова утворюється
+                захисна плівка товщиною в кілька мікрон, яка приймає на себе всі
+                дрібні механічні пошкодження, тим самим захищаючи фарбування
+                автомобіля.
+              </li>
+              <li class="about-polishing__list-item">
+                Простота очищення авто від бруду. Після захисної поліровки
+                автомобіль набагато простіше мити, бруд менше прилипає і краще
+                відходить в процесі миття.
+              </li>
+              <li class="about-polishing__list-item">
+                Безпечна процедура полірування. Під час процедури застосовуються
+                неабразивні матеріали і щадні інструменти, які не знімають
+                навіть мікрона заводського покриття.
+              </li>
+            </ul>
+            <p>
+              Здійснити якісне полірування авто у Києві пропонує наша детейлінг
+              студія “BathHouseCar”! У нас працюють професіонали, які виконають
+              полірування оперативно та на найвищому рівні!
+            </p>
+          </div>
+          <div class="about-polishing__images">
+            <img
+              class="about-polishing__image"
+              src="../assets/images/about-polishing1.png"
+              alt=""
+            />
+            <img
+              class="about-polishing__image second"
+              src="../assets/images/about-polishing2.png"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="price">
+          <span class="price__title"> Ціни </span>
+          <div class="price__table">
+            <div class="price__table-header">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class">Полірування від</span>
+              <span class="table__price">4000</span>
+              <span class="table__price">4500</span>
+              <span class="table__price">5000</span>
+              <span class="table__price">5500</span>
+              <span class="table__price">6000</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Полірування 1-го місця від</span
+              >
+              <span class="table__price">300</span>
+              <span class="table__price">300</span>
+              <span class="table__price">300</span>
+              <span class="table__price">300</span>
+              <span class="table__price">300</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Полірування лакових стійок від</span
+              >
+              <span class="table__price">500</span>
+              <span class="table__price">500</span>
+              <span class="table__price">500</span>
+              <span class="table__price">500</span>
+              <span class="table__price">500</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Полірування елемента грн від</span
+              >
+              <span class="table__price">800</span>
+              <span class="table__price">800</span>
+              <span class="table__price">800</span>
+              <span class="table__price">800</span>
+              <span class="table__price">800</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Полірування фар (1-е місце) від</span
+              >
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.0652479015247!2d30.48832508872031!3d50.41822367085411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfff081b864d%3A0xc081cfcb2c607d45!2sBathHouseCar!5e0!3m2!1sru!2sua!4v1674656242764!5m2!1sru!2sua"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map__feedback">
+            <div class="map__title">BathHouseCar</div>
+            <div class="map__number">+38 (096) 390 60 49</div>
+            <div class="map__button modal">Запис і консультація</div>
+            <div class="map__adress">
+              Київ, солом'янський район вул. клінічна 17
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__logo">©BathHouseCar</div>
+          <a href="mailto:BathHouseCar@gmai.com" class="footer__mail"
+            >BathHouseCar@gmail.com</a
+          >
+          <div class="footer__links">
+            <a
+              href="https://www.instagram.com/BathHouseCar/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/instlink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/anatoliikovtunets/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/fblink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a href="https://bathhousecar.business.site/" class="footer__link">
+              <img
+                src="../assets/images/googlelink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCrxr0SdUCdbvNzgOYAyhhwg"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/youtubelink.png"
+                alt=""
+                class="link__image-youtube"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

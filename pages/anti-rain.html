@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script defer src="../scripts/view.js"></script>
+    <script defer src="../scripts/burger.js"></script>
+    <script defer src="../scripts/header.js"></script>
+    <script defer src="../scripts/popup.js"></script>
+    <script defer src="../scripts/map.js"></script>
+    <script defer src="../scripts/app.js"></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/anti-rain.css" />
+    <title>BathHouseCar</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header__panel">
+            <a href="../index.html" class="header__logo-wrapper">
+              <img
+                class="header__logo"
+                src="../assets/images/header-logo.png"
+                alt=""
+              />
+            </a>
+            <nav class="header__nav">
+              <a class="header__nav-item" href="../pages/nanoceramics.html"
+                >NANOКЕРАМІКА</a
+              >
+              <a class="header__nav-item" href="../pages/polishing.html"
+                >ПОЛІРУВАННЯ</a
+              >
+              <a class="header__nav-item" href="../pages/cleaning.html"
+                >ХІМЧИСТКА</a
+              >
+              <a class="header__nav-item" href="#"
+                >МИЙКА
+                <img
+                  class="menu-triangle"
+                  src="../assets/icons/triangle.png"
+                  alt=""
+                />
+              </a>
+              <div class="menu">
+                <a href="../pages/car-detailing.html" class="menu-item"
+                  >Автомийка</a
+                >
+                <a href="../pages/engine-detailing.html" class="menu-item"
+                  >Детейлінг двигуна</a
+                >
+                <a href="../pages/wax.html" class="menu-item">Твердий віск</a>
+                <a href="../pages/anti-rain.html" class="menu-item">Антидощ</a>
+              </div>
+              <a
+                class="header__nav-item"
+                href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+                >ВІДГУКИ</a
+              >
+              <a class="header__nav-item" href="../pages/price.html">ЦІНИ</a>
+            </nav>
+
+            <div class="header__number-wrapper">
+              <div class="header__number modal">+38 (096) 390 60 49</div>
+              <img
+                class="header__phone modal"
+                src="../assets/icons/phone.png"
+                alt=""
+              />
+              <a href="#" class="burger-menu_button">
+                <spun class="burger-menu_lines"></spun>
+              </a>
+              <div class="burger-menu"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__promo">
+          <span class="header__title">Антидощ на скло автомобіля</span>
+          <span class="header__description"
+            >Високотехнологічний комплекс захисту скла автомобіля від негативних
+            впливів довкілля</span
+          >
+          <div class="header__button-wrapper">
+            <div class="header__button modal">Запис і консультація</div>
+          </div>
+        </div>
+      </header>
+      <div class="burger__main">
+        <div class="burger__body">
+          <div class="burger__content">
+            <a href="../index.html" class="burger__link-item">Головна</a>
+            <a href="../pages/nanoceramics.html" class="burger__link-item"
+              >Nanoкераміка</a
+            >
+            <a href="../pages/polishing.html" class="burger__link-item"
+              >Полірування</a
+            >
+            <a href="../pages/cleaning.html" class="burger__link-item"
+              >Хімчистка</a
+            >
+            <a href="../pages/car-detailing.html" class="burger__link-item"
+              >Автомийка</a
+            >
+            <a href="../pages/engine-detailing.html" class="burger__link-item"
+              >Детейлінг двигуна парою</a
+            >
+            <a href="../pages/wax.html" class="burger__link-item"
+              >Твердий віск</a
+            >
+            <a href="../pages/anti-rain.html" class="burger__link-item"
+              >Антидощ</a
+            >
+            <a
+              href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+              class="burger__link-item"
+              >Відгуки</a
+            >
+            <a href="../pages/price.html" class="burger__link-item">Ціни</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <img src="../assets/icons/close.png" alt="" class="popup__close" />
+            <div class="tap__on">Натисни і дзвони</div>
+            <a href="tel:+38 (096) 390 60 49" class="popup__phone"
+              >+38 (096) 390 60 49</a
+            >
+            <div class="popup__or">АБО</div>
+            <div class="popup__form">
+              Введіть своє ім’я і номер телефону і ми з вами зв’яжемось
+              найближчим часом
+            </div>
+            <input type="text" placeholder="Ім’я" class="name__input" />
+            <input type="tel" placeholder="Телефон" class="number__input" />
+            <button class="callback__button">Передзвоніть мені</button>
+          </div>
+        </div>
+      </div>
+      <section class="nano__description">
+        <div class="antirain__header">Полсуга нанесення антидощу</div>
+        <div class="description__defend">
+          <div class="defend__text">
+            <div class="defend__description">
+              Нанесення антидощу виконується за допомогою спеціальних
+              гідрофобних засобів, які не дозволяють рідині залишати сліди на
+              поверхні скла в автомобілі. Антидощ випускається в
+            </div>
+            <!-- <div class="defend__procedure">
+                  Вся процедура нанесення керамічного покриття має всього лише
+                  декілька етапів, при цьому дуже важливо дотримуватися правильної
+                  послідовності дій.
+                </div> -->
+            <div class="defend__title">Декількох різновидах:</div>
+            <div class="defend__list">
+              Рідина, яку наносять на тканину, та протирають нею скло авто.
+            </div>
+            <div class="defend__list">У вигляді аерозолів.</div>
+            <div class="defend__list">
+              Спеціальні серветки та губки, які вже просочені рідиною.
+            </div>
+
+            <div class="defend__procedure">
+              Для того, щоб антидощ був правильно та рівномірно нанесений на
+              скло автомобіля, та максимально ефективно виконував своє
+              призначення, слід звертатися до спеціалізованих мийок, працівники
+              яких знають та вміють правильно наносити антидощ.
+            </div>
+          </div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eqxwIOAiHZA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="defend__example"
+          ></iframe>
+        </div>
+
+        <div class="description__benefits">
+          <img
+            src="../assets/images/antirain2.png"
+            alt=""
+            class="betefite__example"
+          />
+          <div class="benefite__text">
+            <div class="defend__description">
+              Після нанесення антидощу, ефект від його дії триватиме від 2 до 9
+              місяців, в залежності від умов погоди. А вартість нанесення
+              окупається за перший місяць, тому, що вам не потрібно буде
+              заїжджати на автомийку, щоб помити скло.
+            </div>
+            <!-- <div class="defend__procedure">
+                  Для порівняння, без належного захисту, подряпати лакофарбове
+                  покриття кузова автомобіля можна навіть звичайнім нігтем.
+                </div> -->
+            <div class="defend__title">
+              Нанесення антидощу включає в себе такі роботи:
+            </div>
+            <div class="defend__list">Ретельна мийка поверхні скла;</div>
+            <div class="defend__list">
+              Видалення застарілого бруду та інших слідів;
+            </div>
+            <div class="defend__list">Знежирення поверхні скла;</div>
+            <div class="defend__list">Нанесення основних речовин антидощу;</div>
+            <div class="defend__list">
+              Просушення нанесеного гідрофобного покриття природним способом;
+            </div>
+            <div class="defend__list">Полірування;</div>
+            <div class="defend__list">Контроль якості покриття.</div>
+            <div class="defend__procedure">
+              Нанесення антидощу займе не більше 30-60 хвилин вашого часу. Час
+              роботи залежить від кількості скляних поверхонь, та їх форми. Та
+              навіть при обробці одного лобового скла, вас будуть обслуговувати
+              кваліфіковані спеціалісти нашої детейлінг мийки.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__title">Ціни</div>
+
+        <div class="price__table">
+          <div class="price__table-header old">
+            <span class="table__class">Клас авто</span>
+            <span class="table__header-price">1 кат</span>
+            <span class="table__header-price">2 кат</span>
+            <span class="table__header-price">3 кат</span>
+            <span class="table__header-price">4 кат</span>
+            <span class="table__header-price">5 кат</span>
+          </div>
+          <div class="price__table-elements">
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Антидощ лобове і пер 2 скла Soft 99 Ultra Glaco</span
+              >
+              <span class="table__price">500</span>
+              <span class="table__price">550</span>
+              <span class="table__price">600</span>
+              <span class="table__price">650</span>
+              <span class="table__price">700</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Антидощ все скло Soft 99 Ultra Glaco</span
+              >
+              <span class="table__price">900</span>
+              <span class="table__price">1000</span>
+              <span class="table__price">1100</span>
+              <span class="table__price">1200</span>
+              <span class="table__price">1300</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class">Антидощ Aquapei</span>
+              <span class="table__price">1000</span>
+              <span class="table__price">1100</span>
+              <span class="table__price">1100</span>
+              <span class="table__price">1100</span>
+              <span class="table__price">1200</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.0652479015247!2d30.48832508872031!3d50.41822367085411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfff081b864d%3A0xc081cfcb2c607d45!2sBathHouseCar!5e0!3m2!1sru!2sua!4v1674656242764!5m2!1sru!2sua"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map__feedback">
+            <div class="map__title">BathHouseCar</div>
+            <div class="map__number">+38 (096) 390 60 49</div>
+            <div class="map__button modal">Запис і консультація</div>
+            <div class="map__adress">
+              Київ, солом'янський район вул. клінічна 17
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__logo">©BathHouseCar</div>
+          <a href="mailto:BathHouseCar@gmai.com" class="footer__mail"
+            >BathHouseCar@gmai.com</a
+          >
+          <div class="footer__links">
+            <a
+              href="https://www.instagram.com/BathHouseCar/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/instlink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/anatoliikovtunets/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/fblink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a href="https://bathhousecar.business.site/" class="footer__link">
+              <img
+                src="../assets/images/googlelink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCrxr0SdUCdbvNzgOYAyhhwg"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/youtubelink.png"
+                alt=""
+                class="link__image-youtube"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

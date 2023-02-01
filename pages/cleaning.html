@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script defer src="../scripts/view.js"></script>
+    <script defer src="../scripts/burger.js"></script>
+    <script defer src="../scripts/header.js"></script>
+    <script defer src="../scripts/popup.js"></script>
+    <script defer src="../scripts/map.js"></script>
+    <script defer src="../scripts/app.js"></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/cleaning.css" />
+    <title>BathHouseCar</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header__panel">
+            <a href="../index.html" class="header__logo-wrapper">
+              <img
+                class="header__logo"
+                src="../assets/images/header-logo.png"
+                alt=""
+              />
+            </a>
+            <nav class="header__nav">
+              <a class="header__nav-item" href="../pages/nanoceramics.html"
+                >NANOКЕРАМІКА</a
+              >
+              <a class="header__nav-item" href="../pages/polishing.html"
+                >ПОЛІРУВАННЯ</a
+              >
+              <a class="header__nav-item" href="../pages/cleaning.html"
+                >ХІМЧИСТКА</a
+              >
+              <a class="header__nav-item" href="#"
+                >МИЙКА
+                <img
+                  class="menu-triangle"
+                  src="../assets/icons/triangle.png"
+                  alt=""
+                />
+              </a>
+              <div class="menu">
+                <a href="../pages/car-detailing.html" class="menu-item"
+                  >Автомийка</a
+                >
+                <a href="../pages/engine-detailing.html" class="menu-item"
+                  >Детейлінг двигуна</a
+                >
+                <a href="../pages/wax.html" class="menu-item">Твердий віск</a>
+                <a href="../pages/anti-rain.html" class="menu-item">Антидощ</a>
+              </div>
+              <a
+                class="header__nav-item"
+                href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+                >ВІДГУКИ</a
+              >
+              <a class="header__nav-item" href="../pages/price.html">ЦІНИ</a>
+            </nav>
+
+            <div class="header__number-wrapper">
+              <div class="header__number modal">+38 (096) 390 60 49</div>
+              <img
+                class="header__phone modal"
+                src="../assets/icons/phone.png"
+                alt=""
+              />
+              <a href="#" class="burger-menu_button">
+                <spun class="burger-menu_lines"></spun>
+              </a>
+              <div class="burger-menu"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__promo">
+          <span class="header__title">Хімчистка салону автомобіля</span>
+          <span class="header__description"
+            >Повна дезенфекція салону вашого автомобіля</span
+          >
+          <div class="header__button-wrapper">
+            <div class="header__button modal">Запис і консультація</div>
+          </div>
+        </div>
+      </header>
+      <div class="burger__main">
+        <div class="burger__body">
+          <div class="burger__content">
+            <a href="../index.html" class="burger__link-item">Головна</a>
+            <a href="../pages/nanoceramics.html" class="burger__link-item"
+              >Nanoкераміка</a
+            >
+            <a href="../pages/polishing.html" class="burger__link-item"
+              >Полірування</a
+            >
+            <a href="../pages/cleaning.html" class="burger__link-item"
+              >Хімчистка</a
+            >
+            <a href="../pages/car-detailing.html" class="burger__link-item"
+              >Автомийка</a
+            >
+            <a href="../pages/engine-detailing.html" class="burger__link-item"
+              >Детейлінг двигуна парою</a
+            >
+            <a href="../pages/wax.html" class="burger__link-item"
+              >Твердий віск</a
+            >
+            <a href="../pages/anti-rain.html" class="burger__link-item"
+              >Антидощ</a
+            >
+            <a
+              href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+              class="burger__link-item"
+              >Відгуки</a
+            >
+            <a href="../pages/price.html" class="burger__link-item">Ціни</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <img src="../assets/icons/close.png" alt="" class="popup__close" />
+            <div class="tap__on">Натисни і дзвони</div>
+            <a href="tel:+38 (096) 390 60 49" class="popup__phone"
+              >+38 (096) 390 60 49</a
+            >
+            <div class="popup__or">АБО</div>
+            <div class="popup__form">
+              Введіть своє ім’я і номер телефону і ми з вами зв’яжемось
+              найближчим часом
+            </div>
+            <input type="text" placeholder="Ім’я" class="name__input" />
+            <input type="tel" placeholder="Телефон" class="number__input" />
+            <button class="callback__button">Передзвоніть мені</button>
+          </div>
+        </div>
+      </div>
+      <section class="nano__description">
+        <div class="description__defend">
+          <div class="defend__text">
+            <div class="defend__description">
+              Автомобіль в процесі експлуатації дуже забруднюється. Це
+              стосується не лише зовнішньої частини та килимків. Салон машини
+              також потребує ретельного догляду. Адже навіть на чистих сидіннях
+              збирається пил, що може викликати алергію. Тому, хімчистка салону
+              є необхідною процедурою для вашого автомобіля.
+            </div>
+
+            <div class="defend__title">
+              Наша студія проводить хімчистку салону за допомогою двох
+              технологій:
+            </div>
+            <div class="defend__list">
+              Сухою парою – поверхня оброблюється парою, що глибоко проникає в
+              структуру матеріалів, видаляючи жир та залишки масла, грибок та
+              цвіль. Для цього ми використовуємо парогенератор нового покоління
+              TECNOVAP.
+            </div>
+            <div class="defend__list">
+              Аерохімчістка (пневматична) – утворюється вихровий потік, що діє
+              за принципом торнадо, вибиваючи всі забруднення зсередини назовні.
+              Елементи безконтактно оброблюються обладнанням перевіреної марки
+              Tornador.
+            </div>
+            <div class="defend__procedure">
+              Застосовується автокосметика яка біорозкладається, антиаллергенна,
+              нешкідлива для людей і тварин, автомобіля і навколишнього
+              середовища.
+            </div>
+            <!-- <div class="defend__list">
+                  Нанесення кераміки. Залежно від послуги, кераміка може бути
+                  нанесена у 2 або 6 шарів. Тривалість нанесення одного шару
+                  кераміки – 2 години. Після нанесення повинно пройти ще 3 години
+                  перед нанесенням наступного шару. Важливо пам’ятати, що перший шар
+                  кераміки повинен кристалізуватися. Для цього, під час його
+                  висихання використовують інфрачервону сушку. Після того, як на
+                  кузов нанесли всі шари кераміки, останнім шаром наносять
+                  гідрофобну речовину.
+                </div> -->
+          </div>
+          <img
+            src="../assets/images/backgrounds/cleaning1.png"
+            alt=""
+            class="defend__example"
+          />
+        </div>
+
+        <div class="description__benefits">
+          <img
+            src="../assets/images/backgrounds/cleaning2.png"
+            alt=""
+            class="betefite__example"
+          />
+          <div class="benefite__text">
+            <div class="benefite__description">
+              Переваги чистки салону автомобіля парою:
+            </div>
+            <!-- <div class="defend__procedure">
+                  Для порівняння, без належного захисту, подряпати лакофарбове
+                  покриття кузова автомобіля можна навіть звичайнім нігтем.
+                </div>
+                <div class="defend__title">Нанесення кераміки дозволить вам:</div> -->
+            <div class="defend__list">
+              Гіпоалергенність. При проведенні чищення парою не використовуються
+              хімічні засоби.
+            </div>
+            <div class="defend__list">
+              Стерильність. Після проведення процедури, салон авто повністю
+              стерильний, та має вигляд нового.
+            </div>
+            <div class="defend__list">
+              Ефективність. Пар здатен в короткий проміжок часу очистити салон
+              вашого автомобіля навіть від застарілих плям, та запахів, які не
+              вдалося вивести навіть хімічними засобами.
+            </div>
+            <div class="defend__list">
+              Універсальність. Паром можна провести чистку різноманітних
+              поверхонь – тканина, шкіра, пластмаса, дерево та інше.
+            </div>
+            <!-- <div class="defend__procedure">
+                  В нашій детейлінг майстерні «BathHouseCar» ми використовуємо лише
+                  якісну кераміку від відомих всесвітніх брендів, яка не тільки
+                  утворює міцне покриття, а й захищає кузов вашого автомобіля від
+                  вигорання кольору, появи корозії та інших пошкоджень кузова.
+                </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="ozonation__description">
+        <div class="ozonation__header">Озонація салону автомобіля</div>
+        <div class="ozonation__defend">
+          <div class="defend__text">
+            <div class="defend__description second">
+              Багатьом автовласникам знайома проблема неприємних запахів в
+              салоні автомобіля. Вчасно неприбрані пролиті кисломолочні, білкові
+              і жирові продукти є живильним базою для бактерій, які в процесі
+              своєї життєдіяльності виділяють неприємні гази. Єдиний спосіб
+              позбутися від будь-яких запахів раз і назавжди – дезінфекція
+              салону озоном.
+            </div>
+
+            <div class="defend__title">Унікальність такого методу:</div>
+            <div class="defend__list">
+              Озон – це газ, який утворюється в повітрі під час грози і володіє
+              сильним окислювальним, знезаражувальним і дезинфікуючим ефектом.
+            </div>
+            <div class="defend__list">
+              За допомогою такого пристрою можна не просто тимчасово замаскувати
+              неприємний запах, а й повністю знищити його джерело – бактерії.
+            </div>
+            <div class="defend__list">
+              Озоногенератор бореться з усіма видами цвілі та грибків, ефективно
+              усуває запах з кондиціонера, та здатний впоратися з будь-яким
+              «ароматом» в салоні автомобіля за пару годин.
+            </div>
+            <!-- <div class="defend__list">
+                  Нанесення кераміки. Залежно від послуги, кераміка може бути
+                  нанесена у 2 або 6 шарів. Тривалість нанесення одного шару
+                  кераміки – 2 години. Після нанесення повинно пройти ще 3 години
+                  перед нанесенням наступного шару. Важливо пам’ятати, що перший шар
+                  кераміки повинен кристалізуватися. Для цього, під час його
+                  висихання використовують інфрачервону сушку. Після того, як на
+                  кузов нанесли всі шари кераміки, останнім шаром наносять
+                  гідрофобну речовину.
+                </div> -->
+          </div>
+          <img
+            src="../assets/images/backgrounds/cleaning3.png"
+            alt=""
+            class="defend__example second"
+          />
+        </div>
+
+        <div class="benefite__caption">Чистка салону парогенератором</div>
+        <div class="description__benefits">
+          <img
+            src="../assets/images/backgrounds/cleaning4.png"
+            alt=""
+            class="betefite__example second"
+          />
+          <div class="benefite__text">
+            <div class="ozhone__description">
+              Великою гідністю парогенератора є його безпечне видалення
+              забруднень без пошкодження матеріалу неважливо чи це тканина чи
+              шкіра.
+            </div>
+            <div class="defend__title">Взагалі парогенератор може:</div>
+            <!-- <div class="defend__procedure">
+                  Для порівняння, без належного захисту, подряпати лакофарбове
+                  покриття кузова автомобіля можна навіть звичайнім нігтем.
+                </div>
+                <div class="defend__title">Нанесення кераміки дозволить вам:</div> -->
+            <div class="defend__list par">
+              Чистити матеріали в важкодоступних місцях
+            </div>
+            <div class="defend__list par">
+              Використовувати при чистці воду, яка перетворюється в пар
+            </div>
+            <div class="defend__list par">
+              При ретельній чистці паром зникають різні запахи навіть табачний
+              дим
+            </div>
+            <div class="defend__list par">
+              При чистці проходить подача пару і сушки, що в результаті не дає
+              волозі залишатися і цим самим не розвивається пліснява
+            </div>
+            <div class="defend__list par">
+              Парова чистка не шкодить електроніці яка присутня в автомобілі
+            </div>
+            <div class="defend__procedure par">
+              Парова чистка чудово справляється зі своєю роботою, автомобіль
+              можна використовувати одразу після чистки, вона не шкодить
+              здоров’ю і доволі безпечна для автомобіля.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__title">Ціни</div>
+        <div class="price__table">
+          <div class="price__table-header old">
+            <span class="table__class">Клас авто</span>
+            <span class="table__header-price">1 кат</span>
+            <span class="table__header-price">2 кат</span>
+            <span class="table__header-price">3 кат</span>
+            <span class="table__header-price">4 кат</span>
+            <span class="table__header-price">5 кат</span>
+          </div>
+          <div class="price__table-elements">
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class">Хімчистка автомобіля від</span>
+              <span class="table__price">2500</span>
+              <span class="table__price">2800</span>
+              <span class="table__price">3000</span>
+              <span class="table__price">3300</span>
+              <span class="table__price">3500</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Детейлінг салона автомобіля</span
+              >
+              <span class="table__price">4200</span>
+              <span class="table__price">4500</span>
+              <span class="table__price">5000</span>
+              <span class="table__price">5500</span>
+              <span class="table__price">6000</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class">Хімчистка стелі від</span>
+              <span class="table__price">800</span>
+              <span class="table__price">850</span>
+              <span class="table__price">900</span>
+              <span class="table__price">950</span>
+              <span class="table__price">1000</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class">Хімчистка пола від</span>
+              <span class="table__price">750</span>
+              <span class="table__price">800</span>
+              <span class="table__price">850</span>
+              <span class="table__price">900</span>
+              <span class="table__price">950</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Хімчистка передніх сидінь (1 шт) від</span
+              >
+              <span class="table__price">380</span>
+              <span class="table__price">380</span>
+              <span class="table__price">400</span>
+              <span class="table__price">420</span>
+              <span class="table__price">450</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >хімчистка задніх сидінь від</span
+              >
+              <span class="table__price">650</span>
+              <span class="table__price">680</span>
+              <span class="table__price">700</span>
+              <span class="table__price">750</span>
+              <span class="table__price">800</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Хімчистка панелі приладів і консоль від</span
+              >
+              <span class="table__price">350</span>
+              <span class="table__price">400</span>
+              <span class="table__price">450</span>
+              <span class="table__price">500</span>
+              <span class="table__price">550</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Хімчистка пластикових деталей салона від</span
+              >
+              <span class="table__price">300</span>
+              <span class="table__price">320</span>
+              <span class="table__price">340</span>
+              <span class="table__price">350</span>
+              <span class="table__price">400</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Хімчистка дверних карт (1 шт) від</span
+              >
+              <span class="table__price">200</span>
+              <span class="table__price">200</span>
+              <span class="table__price">220</span>
+              <span class="table__price">240</span>
+              <span class="table__price">250</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class">хімчистка багажника від</span>
+              <span class="table__price">450</span>
+              <span class="table__price">500</span>
+              <span class="table__price">550</span>
+              <span class="table__price">600</span>
+              <span class="table__price">650</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Хімчискта килимків (4 шт)</span
+              >
+              <span class="table__price">300</span>
+              <span class="table__price">300</span>
+              <span class="table__price">320</span>
+              <span class="table__price">340</span>
+              <span class="table__price">350</span>
+            </div>
+            <div class="price__table-header new-table">
+              <span class="table__class">Клас авто</span>
+              <span class="table__header-price">1 кат</span>
+              <span class="table__header-price">2 кат</span>
+              <span class="table__header-price">3 кат</span>
+              <span class="table__header-price">4 кат</span>
+              <span class="table__header-price">5 кат</span>
+            </div>
+            <div class="price__table-element">
+              <span class="table__element-class"
+                >Озонація салона (до 30 хв)</span
+              >
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+              <span class="table__price">400</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.0652479015247!2d30.48832508872031!3d50.41822367085411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfff081b864d%3A0xc081cfcb2c607d45!2sBathHouseCar!5e0!3m2!1sru!2sua!4v1674656242764!5m2!1sru!2sua"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map__feedback">
+            <div class="map__title">BathHouseCar</div>
+            <div class="map__number">+38 (096) 390 60 49</div>
+            <div class="map__button modal">Запис і консультація</div>
+            <div class="map__adress">
+              Київ, солом'янський район вул. клінічна 17
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__logo">©BathHouseCar</div>
+          <a href="mailto:BathHouseCar@gmai.com" class="footer__mail"
+            >BathHouseCar@gmai.com</a
+          >
+          <div class="footer__links">
+            <a
+              href="https://www.instagram.com/BathHouseCar/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/instlink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/anatoliikovtunets/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/fblink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a href="https://bathhousecar.business.site/" class="footer__link">
+              <img
+                src="../assets/images/googlelink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCrxr0SdUCdbvNzgOYAyhhwg"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/youtubelink.png"
+                alt=""
+                class="link__image-youtube"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

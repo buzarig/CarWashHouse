@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script defer src="../scripts/view.js"></script>
+    <script defer src="../scripts/burger.js"></script>
+    <script defer src="../scripts/header.js"></script>
+    <script defer src="../scripts/popup.js"></script>
+    <script defer src="../scripts/map.js"></script>
+    <script defer src="../scripts/app.js"></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/nanoceramics.css" />
+    <title>BathHouseCar</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header__panel">
+            <a href="../index.html" class="header__logo-wrapper">
+              <img
+                class="header__logo"
+                src="../assets/images/header-logo.png"
+                alt=""
+              />
+            </a>
+            <nav class="header__nav">
+              <a class="header__nav-item" href="../pages/nanoceramics.html"
+                >NANOКЕРАМІКА</a
+              >
+              <a class="header__nav-item" href="../pages/polishing.html"
+                >ПОЛІРУВАННЯ</a
+              >
+              <a class="header__nav-item" href="../pages/cleaning.html"
+                >ХІМЧИСТКА</a
+              >
+              <a class="header__nav-item" href="#"
+                >МИЙКА
+                <img
+                  class="menu-triangle"
+                  src="../assets/icons/triangle.png"
+                  alt=""
+                />
+              </a>
+              <div class="menu">
+                <a href="../pages/car-detailing.html" class="menu-item"
+                  >Автомийка</a
+                >
+                <a href="../pages/engine-detailing.html" class="menu-item"
+                  >Детейлінг двигуна</a
+                >
+                <a href="../pages/wax.html" class="menu-item">Твердий віск</a>
+                <a href="../pages/anti-rain.html" class="menu-item">Антидощ</a>
+              </div>
+              <a
+                class="header__nav-item"
+                href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+                >ВІДГУКИ</a
+              >
+              <a class="header__nav-item" href="../pages/price.html">ЦІНИ</a>
+            </nav>
+
+            <div class="header__number-wrapper">
+              <div class="header__number modal">+38 (096) 390 60 49</div>
+              <img
+                class="header__phone modal"
+                src="../assets/icons/phone.png"
+                alt=""
+              />
+              <a href="#" class="burger-menu_button">
+                <spun class="burger-menu_lines"></spun>
+              </a>
+              <div class="burger-menu"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__promo">
+          <span class="header__title">Керамічне покриття вашого авто</span>
+          <span class="header__description"
+            >Неймовірний гідрофоб, діамантовий блиск та надійний і довговічний
+            захист</span
+          >
+          <div class="header__button-wrapper">
+            <div class="header__button modal">Запис і консультація</div>
+          </div>
+        </div>
+      </header>
+      <div class="burger__main">
+        <div class="burger__body">
+          <div class="burger__content">
+            <a href="../index.html" class="burger__link-item">Головна</a>
+            <a href="../pages/nanoceramics.html" class="burger__link-item"
+              >Nanoкераміка</a
+            >
+            <a href="../pages/polishing.html" class="burger__link-item"
+              >Полірування</a
+            >
+            <a href="../pages/cleaning.html" class="burger__link-item"
+              >Хімчистка</a
+            >
+            <a href="../pages/car-detailing.html" class="burger__link-item"
+              >Автомийка</a
+            >
+            <a href="../pages/engine-detailing.html" class="burger__link-item"
+              >Детейлінг двигуна парою</a
+            >
+            <a href="../pages/wax.html" class="burger__link-item"
+              >Твердий віск</a
+            >
+            <a href="../pages/anti-rain.html" class="burger__link-item"
+              >Антидощ</a
+            >
+            <a
+              href="https://www.google.com/maps/place/BathHouseCar/@50.4180034,30.4868429,17z/data=!4m7!3m6!1s0x40d4cfff081b864d:0xc081cfcb2c607d45!8m2!3d50.4180034!4d30.4890369!9m1!1b1"
+              class="burger__link-item"
+              >Відгуки</a
+            >
+            <a href="../pages/price.html" class="burger__link-item">Ціни</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <img src="../assets/icons/close.png" alt="" class="popup__close" />
+            <div class="tap__on">Натисни і дзвони</div>
+            <a href="tel:+38 (096) 390 60 49" class="popup__phone"
+              >+38 (096) 390 60 49</a
+            >
+            <div class="popup__or">АБО</div>
+            <div class="popup__form">
+              Введіть своє ім’я і номер телефону і ми з вами зв’яжемось
+              найближчим часом
+            </div>
+            <input type="text" placeholder="Ім’я" class="name__input" />
+            <input type="tel" placeholder="Телефон" class="number__input" />
+            <button class="callback__button">Передзвоніть мені</button>
+          </div>
+        </div>
+      </div>
+      <section class="nano__description">
+        <div class="description__defend">
+          <div class="defend__text">
+            <div class="defend__description">
+              Захист кузова автомобіля керамікою – це насамперед чудова
+              можливість збільшити термін експлуатації лакового покриття, та
+              зберегти його вигляд, ніби авто тільки но виїхало з салону.
+            </div>
+            <div class="defend__procedure">
+              Вся процедура нанесення керамічного покриття має всього лише
+              декілька етапів, при цьому дуже важливо дотримуватися правильної
+              послідовності дій.
+            </div>
+            <div class="defend__title">
+              Етапи нанесення кераміки на кузов авто:
+            </div>
+            <div class="defend__list">
+              Ретельна мийка всього кузова автомобіля, видалення слідів
+              застарілого бруду, слідів жиру та плям палива та інших речовин,
+              залишків асфальту та смоли, комах та іншого бруду
+            </div>
+            <div class="defend__list">
+              Полірування кузова. Це проводиться для того, щоб прибрати
+              потертості та подряпини різної глибини.
+            </div>
+            <div class="defend__list">
+              Нанесення кераміки. Залежно від послуги, кераміка може бути
+              нанесена у 2 або 6 шарів. Тривалість нанесення одного шару
+              кераміки – 2 години. Після нанесення повинно пройти ще 3 години
+              перед нанесенням наступного шару. Важливо пам’ятати, що перший шар
+              кераміки повинен кристалізуватися. Для цього, під час його
+              висихання використовують інфрачервону сушку. Після того, як на
+              кузов нанесли всі шари кераміки, останнім шаром наносять
+              гідрофобну речовину.
+            </div>
+          </div>
+          <img
+            src="../assets/images/nanodefendexample.png"
+            alt=""
+            class="defend__example"
+          />
+        </div>
+
+        <div class="description__benefits">
+          <img
+            src="../assets/images/benefitetuareg.png"
+            alt=""
+            class="betefite__example"
+          />
+          <div class="benefite__text">
+            <div class="defend__description">
+              Міцність та довговічність керамічного покриття обумовлене великим
+              вмістом в речовині діоксиду кремнію – понад 70 відсотків. Це
+              означає, що нанести подряпину на кузові вашого автомобіля можна
+              лише дуже твердим предметом.
+            </div>
+            <div class="defend__procedure">
+              Для порівняння, без належного захисту, подряпати лакофарбове
+              покриття кузова автомобіля можна навіть звичайнім нігтем.
+            </div>
+            <div class="defend__title">Нанесення кераміки дозволить вам:</div>
+            <div class="defend__list">
+              Захистити кузов автомобіля від незначних подряпин та потертостей,
+              появи слідів іржі, зменшить вплив ультрафіолетового
+              випромінювання, а також іншої хімії.
+            </div>
+            <div class="defend__list">
+              Створить на поверхні к ючись на ньому, та не залишаючи слідів.
+              Також це стосується бруду та пилу.
+            </div>
+            <div class="defend__list">
+              Дозволяє придати кузову автомобіля естетичний вигляд. При цьому
+              з’явиться блиск та глибина кольору, а також приємне
+              віддзеркалювання.
+            </div>
+            <div class="defend__procedure">
+              В нашій детейлінг майстерні «BathHouseCar» ми використовуємо лише
+              якісну кераміку від відомих всесвітніх брендів, яка не тільки
+              утворює міцне покриття, а й захищає кузов вашого автомобіля від
+              вигорання кольору, появи корозії та інших пошкоджень кузова.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nanolex">
+        <div class="nanolex__qualities">
+          <div class="qualities__text">
+            <div class="qualities__header">
+              Особливості захисного покриття Nanolex Si3D
+            </div>
+            <div class="qualities__texts">
+              Nanolex Si3D – це керамічне покриття для захисту ЛКП , продукт
+              німецької марки Nanolex. Відмінність даного засобу від аналогів
+              полягає в складній рецептурі. Si3D повністю безпечний для
+              делікатних та “свіжих” лакофарбових покриттів.
+            </div>
+            <div class="defend__title">Серед захисних складів виділяють:</div>
+            <div class="defend__list">
+              Si3D – засіб для ЛКП автомобіля. Покриття стійке до впливу
+              погодних умов, хімічних реагентів, захищає від корозії.
+            </div>
+            <div class="defend__list">
+              Si3D HD – інноваційний засіб, володіє високою щільністю та
+              чудовими захисними властивостями.
+            </div>
+            <div class="defend__list">
+              Si3D Matte – покриття для матових фарб і поверхонь.
+            </div>
+            <div class="defend__list">
+              Si3D Headlight – забезпечує захист фар та скла від впливу
+              навколишнього середовища та сонячних променів.
+            </div>
+          </div>
+          <img
+            src="../assets/images/nanolex1.png"
+            alt=""
+            class="qualities__example"
+          />
+        </div>
+
+        <div class="nanolex__best">
+          <div class="best__text">
+            <div class="best__header">Nanolex – одне з найкращих</div>
+            <div class="best__listt">
+              І мабуть, саме технологічне захисне покриття. При нанесенні на
+              поверхню кузова автомобіля, нано частинки покриття на
+              молекулярному рівні заповнюють відкриті пори лаку, вирівнюють
+              поверхню та утворюють міцний захисний шар.
+            </div>
+            <div class="best__list">
+              Така унікальна особливість Nanolex Si3D забезпечує якісний захист
+              від дрібних подряпин, незначних сколів, смол, бітуму, корозії,
+              вигоряння та втрати кольору. Si3D перешкоджає прилипанню до
+              поверхні кузова бруду, відштовхує воду, пил.
+            </div>
+            <div class="best__list">
+              Подбайте про своє авто — довіряйте професіоналам. Звертайтесь в
+              BathHauseCar! Ми допоможемо зберегти чистоту та свіжість всередині
+              авто, а кузов блищатиме, приємно радуючи Вас та оточуючих своїм
+              зовнішнім виглядом!
+            </div>
+          </div>
+          <img
+            src="../assets/images/nanolex2.png"
+            alt=""
+            class="qualities__example second"
+          />
+        </div>
+      </section>
+      <section class="our__works">
+        <div class="our__header">Наші роботи</div>
+        <div class="works__examples">
+          <img
+            src="../assets/images/work1.png"
+            alt=""
+            class="work__example first"
+          />
+          <img
+            src="../assets/images/work2.png"
+            alt=""
+            class="work__example second"
+          />
+          <img
+            src="../assets/images/work3.png"
+            alt=""
+            class="work__example third"
+          />
+          <img
+            src="../assets/images/work4.png"
+            alt=""
+            class="work__example forth"
+          />
+        </div>
+      </section>
+      <section class="price">
+        <span class="price__title"> Ціни </span>
+        <div class="price__table">
+          <div class="price__table-header">
+            <span class="table__class">Клас авто</span>
+            <span class="table__header-price">1 кат</span>
+            <span class="table__header-price">2 кат</span>
+            <span class="table__header-price">3 кат</span>
+            <span class="table__header-price">4 кат</span>
+            <span class="table__header-price">5 кат</span>
+          </div>
+          <div class="price__table-header new-table">
+            <span class="table__class">Клас авто</span>
+            <span class="table__header-price">1 кат</span>
+            <span class="table__header-price">2 кат</span>
+            <span class="table__header-price">3 кат</span>
+            <span class="table__header-price">4 кат</span>
+            <span class="table__header-price">5 кат</span>
+          </div>
+          <div class="price__table-element">
+            <span class="table__element-class"
+              >Керамічне покриття Nanolex Si3D max</span
+            >
+            <span class="table__price">15500</span>
+            <span class="table__price">18000</span>
+            <span class="table__price">20000</span>
+            <span class="table__price">24000</span>
+            <span class="table__price">26500</span>
+          </div>
+          <div class="price__table-header new-table">
+            <span class="table__class">Клас авто</span>
+            <span class="table__header-price">1 кат</span>
+            <span class="table__header-price">2 кат</span>
+            <span class="table__header-price">3 кат</span>
+            <span class="table__header-price">4 кат</span>
+            <span class="table__header-price">5 кат</span>
+          </div>
+          <div class="price__table-element">
+            <span class="table__element-class"
+              >Керамічне покриття Nanolex Si3D
+            </span>
+            <span class="table__price">14000</span>
+            <span class="table__price">16000</span>
+            <span class="table__price">18000</span>
+            <span class="table__price">21000</span>
+            <span class="table__price">24000</span>
+          </div>
+          <div class="price__table-header new-table">
+            <span class="table__class">Клас авто</span>
+            <span class="table__header-price">1 кат</span>
+            <span class="table__header-price">2 кат</span>
+            <span class="table__header-price">3 кат</span>
+            <span class="table__header-price">4 кат</span>
+            <span class="table__header-price">5 кат</span>
+          </div>
+          <div class="price__table-element">
+            <span class="table__element-class"
+              >Кварцеве покриття Gyeon Q²Can Coat</span
+            >
+            <span class="table__price">8000</span>
+            <span class="table__price">9500</span>
+            <span class="table__price">11000</span>
+            <span class="table__price">12000</span>
+            <span class="table__price">14000</span>
+          </div>
+          <div class="price__table-header new-table">
+            <span class="table__class">Клас авто</span>
+            <span class="table__header-price">1 кат</span>
+            <span class="table__header-price">2 кат</span>
+            <span class="table__header-price">3 кат</span>
+            <span class="table__header-price">4 кат</span>
+            <span class="table__header-price">5 кат</span>
+          </div>
+          <div class="price__table-element">
+            <span class="table__element-class"
+              >Кварцеве покриття Gyeon Q²Can Coat</span
+            >
+            <span class="table__price">5200</span>
+            <span class="table__price">5500</span>
+            <span class="table__price">5800</span>
+            <span class="table__price">6000</span>
+            <span class="table__price">6200</span>
+          </div>
+        </div>
+        <div class="price__notice">
+          <div class="notice">
+            *Ціни на захисні покриття залежить від класу автомобіля та обраного
+            складу
+          </div>
+          <div class="notice">
+            *Ціни вказані для автомобілів з ЛКП без механічних пошкоджень, у
+            стані наближеному до нового. В іншому випадку необхідне повноцінне
+            відновне полірування, що додає до вартості.
+          </div>
+          <div class="notice">
+            *Гарантія на покриття до 9 – 24 місяці (за умови обслуговування
+            автомобіля в BanhHouseCar)
+          </div>
+        </div>
+      </section>
+      <section class="clasification">
+        <div class="clasification__container">
+          <div class="clasification__header">КЛАСИФІКАЦІЯ АВТОМОБІЛІВ</div>
+          <div class="clasification__list">
+            <div class="clasification__item">
+              1 КЛАС (Малий, довжиною до 4,2 метрів) – Audi A1, BMW 1, Skoda
+              Fabia
+            </div>
+            <div class="clasification__item">
+              2 КЛАС (Середній, Бізнес клас, Універсали, довжиною до 5 метрів) –
+              Audi A3, A4; BMW 3, 4, 5, 6
+            </div>
+            <div class="clasification__item">
+              3 КЛАС (Кросовери, довжиною до 4,7 метрів) – Audi Q3, Q5, A6
+              Allroad; BMW X1, X3, X4
+            </div>
+            <div class="clasification__item">
+              4 КЛАС (Представницькі від 5 метрів, Кросовери від 4,7 до 5
+              метрів) – Audi A8; BMW 7, GT5; X5
+            </div>
+            <div class="clasification__item">
+              5 КЛАС (Мінівени, Позашляховик від 5 метрів, Lux sedan) – Bmw X7;
+              Land Cruiser; Audi Q7; Mercedes GLS
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.0652479015247!2d30.48832508872031!3d50.41822367085411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfff081b864d%3A0xc081cfcb2c607d45!2sBathHouseCar!5e0!3m2!1sru!2sua!4v1674656242764!5m2!1sru!2sua"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map__feedback">
+            <div class="map__title">BathHouseCar</div>
+            <div class="map__number">+38 (096) 390 60 49</div>
+            <div class="map__button modal">Запис і консультація</div>
+            <div class="map__adress">
+              Київ, солом'янський район вул. клінічна 17
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__logo">©BathHouseCar</div>
+          <a href="mailto:BathHouseCar@gmai.com" class="footer__mail"
+            >BathHouseCar@gmai.com</a
+          >
+          <div class="footer__links">
+            <a
+              href="https://www.instagram.com/BathHouseCar/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/instlink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/anatoliikovtunets/"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/fblink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a href="https://bathhousecar.business.site/" class="footer__link">
+              <img
+                src="../assets/images/googlelink.png"
+                alt=""
+                class="link__image"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCrxr0SdUCdbvNzgOYAyhhwg"
+              class="footer__link"
+            >
+              <img
+                src="../assets/images/youtubelink.png"
+                alt=""
+                class="link__image-youtube"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
